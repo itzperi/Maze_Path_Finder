@@ -33,7 +33,7 @@ class MazeSolver:
         for r in range(ROWS):
             for c in range(COLS):
                 self.maze[r][c] = 1
-
+#aswath tha gethu mathavella vethu
         def carve(r, c):
             dirs = [(0,1), (1,0), (0,-1), (-1,0)]
             random.shuffle(dirs)
@@ -148,4 +148,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = MazeSolver(root)
     root.mainloop()
+
 
