@@ -115,6 +115,7 @@ class MazeSolver:
 
         visited[r][c] = True
         path.append((r, c))
+        path.insert((r,c))
 
         # Animate exploration
         self.canvas.create_rectangle(
@@ -147,3 +148,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = MazeSolver(root)
     root.mainloop()
+
